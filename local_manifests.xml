@@ -16,7 +16,6 @@
     <!-- Hardware -->
     <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="tz" revision="16.2" />
     <project path="hardware/mediatek" name="android_hardware_mediatek" remote="tz" revision="16.2" />
-    <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="tz" revision="lineage-23.2" />
 
     <!-- Replaced -->
     <remove-project path="external/wpa_supplicant_8" />
