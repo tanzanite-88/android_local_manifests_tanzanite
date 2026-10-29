@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<!-- Generated using sounddrill31/actions_generate_local_manifests -->
+    <!-- Redmi Note 14 4G (tanzanite) - self-hosted mirror set (org: tanzanite-88) -->
 
-    <remote name="nx"
-            fetch="https://github.com/nathanzerogarage" />
+    <remote name="tz" fetch="https://github.com/tanzanite-88" />
 
-    <remote name="halcyon"
-            fetch="https://github.com/halcyonproject" />
-
-    <remote name="halcyon-blobs"
-            fetch="https://git.hlcyn.org/halcyonlv" />
-
-    <!-- Repos -->
-    <project path="device/xiaomi/tanzanite-kernel" name="android_device_xiaomi_tanzanite-kernel" remote="nx" revision="vanilla" />
-    <project path="device/xiaomi/tanzanite" name="android_device_xiaomi_tanzanite" remote="nx" revision="lineage-23.2" />
+    <!-- Device -->
+    <project path="device/xiaomi/tanzanite" name="android_device_xiaomi_tanzanite" remote="tz" revision="lineage-23.2" />
+    <project path="device/xiaomi/tanzanite-kernel" name="android_device_xiaomi_tanzanite-kernel" remote="tz" revision="vanilla" />
 
     <!-- Vendor -->
-    <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="halcyon" revision="16.2" />
-    <project path="vendor/xiaomi/tanzanite" name="vendor_xiaomi_tanzanite" remote="halcyon-blobs" revision="16.2" />
-    <project path="vendor/mediatek/ims" name="vendor_mediatek_ims" remote="halcyon-blobs" revision="16.2" />
+    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="tz" revision="16.2" />
+    <project path="vendor/xiaomi/tanzanite" name="android_vendor_xiaomi_tanzanite" remote="tz" revision="16.2" />
+    <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="tz" revision="16.2" />
 
     <!-- Hardware -->
-    <project path="hardware/xiaomi" name="hardware_xiaomi" remote="halcyon" revision="16.2" />
-    <project path="hardware/mediatek" name="hardware_mediatek" remote="halcyon" revision="16.2" />
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="tz" revision="16.2" />
+    <project path="hardware/mediatek" name="android_hardware_mediatek" remote="tz" revision="16.2" />
+    <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="tz" revision="lineage-23.2" />
 
-    <!-- Other Repos -->
+    <!-- Replaced -->
     <remove-project path="external/wpa_supplicant_8" />
-    <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="halcyon" revision="16.2" />
-
+    <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="tz" revision="16.2" />
 </manifest>
